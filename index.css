@@ -1,12 +1,400 @@
-div {
-    text-align: center;
+html {
+    height: 100%;
+}
+
+#hideoverflow {
+    overflow: hidden;
 }
 
 body {
-    background-image: url(http://getwallpapers.com/wallpaper/full/7/c/6/765090-most-popular-technology-background-images-1920x1080-hd-for-mobile.jpg);
+    margin: 0;
+    height: 100%;
+    font-family: Helvetica, Arial;
+    background-color: gray;
+    color: white;  
 }
 
-h1, h3, p {
+table {
+    width: 650px;
+    text-align: center;
+}
+
+#mainNav {
+    font-size: 1.2rem;
+    font-weight: 200;
+}
+
+#mainNav .nav-link:hover {
+    color: #007bff;
+}
+
+#footer {
     color: white;
-    font-family: Arial, Helvetica, sans-serif;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    position: absolute;
+    width: 100%;
+}
+
+.carousel-item {
+    background-color: gray;
+    border-radius: 10px;
+}
+
+h4 {
+    margin: 65px;
+    font-weight: 200;
+}
+
+#logo {
+    width: 55%;
+}
+
+.card {
+    margin: 15px;
+}
+
+#nav-tabContent {
+    background-color: gray;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+iframe {
+    border-radius:  10px;
+    margin-top: 20px;
+}
+
+#info {
+    background-color: gray;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+#bgdesign {
+    background: url(design.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#bgcontact {
+    background: url(toronto.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#bgresume {
+    background: url(work.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#bgportfolio {
+    background: url(portfolio.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+a {
+    color: white;
+}
+
+#profile {
+    border-radius: 50%;
+}
+
+a:hover {
+    color: #007bff;
+}
+
+#welcome {
+    letter-spacing: 10px;
+    margin-bottom: 40px;
+    font-weight: 200;
+}
+
+#linkedin {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin: 10px;
+    color: white;
+    font-size: 40px;
+}
+
+#name {
+    color:#007bff;
+    font-weight: 200;
+}
+
+#header {
+    margin-top: 100px;
+}
+
+#headfont{
+    font-size: 2.5rem;
+    font-weight: lighter;
+    border-bottom: 2px solid white;
+    animation:  line 3s linear forwards;
+}
+
+@keyframes line {
+    from {
+        left:0%;
+        width:0%;
+    }
+    to {
+        left:0%;
+        width: 100%;
+    }
+}
+
+#movedown {
+    margin-top: 60px;
+
+}
+
+h2 {
+    font-size: 1.5rem;
+    font-weight: 200;
+}
+
+#slider {
+    height: 200%;
+    overflow: hidden;
+    text-align: center;
+}
+
+#nameslide {
+    animation: 5s slide;
+    margin-top: 0%;
+    font-weight: 200;
+}
+
+@keyframes slide {
+    from {
+      margin-top:100%;
+      width:100%;
+    }
+    to {
+      margin-top:0%;
+      width:100%;
+    }
+  }
+
+.banner-text {
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    font-size: 50px;
+    margin-top: 25%;
+    color: white;
+}
+
+.animation-area {
+    background: linear-gradient(to left,#262626,#808080);
+    width: 100%;
+    height: 100vh;
+}
+
+.box-area {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.box-area li{
+    position: absolute;
+    display: block;
+    list-style: none;
+    width: 25px;
+    height: 25px;
+    background: rgba(255,255,255,0.2);
+    animation: animate 20s linear infinite;
+    bottom: -150px;
+}
+
+.box-area li:nth-child(1) {
+    left: 86%;
+    width: 80px;
+    height: 80px;
+    animation-delay: 0s;
+}
+
+.box-area li:nth-child(2) {
+    left: 12%;
+    width: 30px;
+    height: 30px;
+    animation-delay: 1.5s;
+    animation-duration: 8s;
+}
+
+.box-area li:nth-child(3) {
+    left: 70%;
+    width: 100px;
+    height: 100px;
+    animation-delay: 5.5s;
+}
+
+.box-area li:nth-child(4) {
+    left: 42%;
+    width: 125px;
+    height: 125px;
+    animation-delay: 0s;
+    animation-duration: 10s;
+}
+
+.box-area li:nth-child(5) {
+    left: 65%;
+    width: 65px;
+    height: 65px;
+    animation-delay: 0s;
+}
+
+.box-area li:nth-child(6) {
+    left: 5%;
+    width: 110px;
+    height: 110px;
+    animation-delay: 3.5s;
+}
+
+.box-area li:nth-child(7) {
+    left: 28%;
+    width: 120px;
+    height: 120px;
+    animation-delay: 0.7s;
+}
+
+.box-area li:nth-child(8) {
+    left: 22%;
+    width: 90px;
+    height: 90px;
+    animation-delay: 0.5s;
+    animation-duration: 8s;
+}
+
+
+.box-area li:nth-child(9) {
+    left: 78%;
+    width: 60px;
+    height: 60px;
+    animation-delay: 4s;
+    animation-duration: 13s;
+}
+
+.box-area li:nth-child(10) {
+    left: 50%;
+    width: 35px;
+    height: 35px;
+    animation-delay: 8s;
+}
+
+.box-area li:nth-child(11) {
+    left: 8%;
+    width: 70px;
+    height: 70px;
+    animation-delay: 3.5s;
+    animation-duration: 8s;
+}
+
+.box-area li:nth-child(12) {
+    left: 95%;
+    width: 30px;
+    height: 30px;
+    animation-delay: 1.2s;
+    animation-duration: 8s;
+}
+
+.box-area li:nth-child(13) {
+    left: 42%;
+    width: 30px;
+    height: 30px;
+    animation-delay: 0.8s;
+    animation-duration: 12s;
+}
+
+.box-area li:nth-child(14) {
+    left: 62%;
+    width: 40px;
+    height: 40px;
+    animation-delay: 1s;
+    animation-duration: 12s;
+}
+
+.box-area li:nth-child(15) {
+    left: 50%;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: inline-block;
+    animation-delay: 1.5s;
+    animation-duration: 10s;
+}
+
+.box-area li:nth-child(16) {
+    left: 60%;
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    display: inline-block;
+    animation-delay: 0.5s;
+    animation-duration: 12s;
+}
+
+.box-area li:nth-child(17) {
+    left: 89%;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: inline-block;
+    animation-delay: 0.8s;
+    animation-duration: 10s;
+}
+
+.box-area li:nth-child(18) {
+    left: 82%;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: inline-block;
+    animation-delay: 1.3s;
+    animation-duration: 13s;
+}
+
+.box-area li:nth-child(19) {
+    left: 27%;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    display: inline-block;
+    animation-delay: 0.8s;
+    animation-duration: 11s;
+}
+
+.box-area li:nth-child(20) {
+    left: 7%;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: inline-block;
+    animation-delay: 0.5s;
+    animation-duration: 8s;
+}
+
+@keyframes animate {
+    0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-800PX) rotate(360deg);
+        opacity: 0;
+    }
 }
