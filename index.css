@@ -64,15 +64,11 @@ h4 {
     padding: 20px;
 }
 
-iframe {
-    border-radius:  10px;
-    margin-top: 20px;
-}
-
 #info {
     background-color: gray;
     border-radius: 10px;
     padding: 10px;
+    margin: 20px;
 }
 
 #bgdesign {
