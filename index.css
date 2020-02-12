@@ -49,10 +49,31 @@ table {
 .carousel-item {
     background-color: gray;
     border-radius: 10px;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    object-fit: cover !important;
+    padding: 5rem;
+    margin-bottom: 20px;
+}
+
+#one {
+    background-image: url(graduate.jpg);
+}
+
+#two {
+    background-image: url(handshake.jpg);
+}
+
+#three {
+    background-image: url(gaming.jpg);
 }
 
 h4 {
     margin: 65px;
+    font-size: 30px;
     font-weight: 200;
 }
 
