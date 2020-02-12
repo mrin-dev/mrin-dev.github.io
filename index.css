@@ -55,7 +55,7 @@ table {
     -o-background-size: cover;
     background-size: cover;
     object-fit: cover !important;
-    padding: 5rem;
+    padding: 30px;
     margin-bottom: 20px;
 }
 
@@ -73,7 +73,7 @@ table {
 
 h4 {
     margin: 65px;
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 200;
 }
 
