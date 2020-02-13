@@ -1,0 +1,56 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns = "http://www.w3.org/1999/xhtml">
+
+    <head>
+
+        <title> Phrase Input </title>
+
+        <!-- External CSS applied to html document -->
+        <link href="Phrase.css" rel="stylesheet" type="text/css" />
+
+        <!-- Embedded JavaScript applied in html document -->
+        <script>
+                function phraseValidation (inputtext) {
+                    var alphanumeric = /^[a-zA-Z0-9 ]*$/;
+                    if(inputtext.value.match(alphanumeric))
+                    {         
+                        return true;
+                    }
+                    else
+                    {
+                        alert("Please input alphanumeric characters only! Submission not processed.");
+                        return false;
+                    }
+                }
+        </script>
+
+    </head>
+
+    <body>
+        <div>
+
+        <!-- Form created that is sent to the PHP document "PhraseParse.php". -->
+        <!-- JavaScript function phraseValidation applied to the form upon submitting and alerting if criteria not met. -->
+        <form action="PhraseParse.php" method="post" onsubmit="return phraseValidation(phrase)">
+            <!-- Text displayed -->
+            <p> <h2> Input a Phrase </h2> </p>   
+            <p> Enter a phrase consisting of at least 3 words separated by the character ' ' (space).<br />
+                The words will be parsed and matched with the following types:
+                <ol>
+                    <li> WT1 words : start with 3 alphabetic characters </li>
+                    <li> WT2 words : start with 3 digits </li>
+                    <li> WT3 words : undefined (are not of type WT1 or WT2 above) </li>
+                </ol>
+            </p>  
+
+            <!-- Input text field -->
+            <input type="text" id="phrase" name="phrase" /> <br /> <br />
+            <!-- Submit button that sends the input text to the "PhraseParse.php" file if JavaScript function accepts. -->
+            <button type="submit" name="SubmitPhrase"> Submit Phrase </button> 
+
+        </form>
+
+        </div>
+    </body>
+</html>
