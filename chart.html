@@ -1,0 +1,183 @@
+<?xml version = "1.0"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns = "http://www.w3.org/1999/xhtml">
+
+<head>
+    <title> Page2 </title>
+
+<!-- Creates a link to an external CSS file -->
+    <link href="Page2.css" rel="stylesheet" type="text/css">
+
+<!-- Begin JaveScript functions embedded in HTML document -->
+    <script>
+        // Function creates an alert popup window for the hidden value
+            function hiddenPopup() 
+            {
+                var showValue = document.getElementById ("hf")
+                alert(showValue.value)
+             }
+
+             // Function creates an alert popup window when each radio button is selected 
+             function surveyChoice(survey)
+             {
+                 switch (survey)
+                 {
+                     case 4:
+                        alert("Awesome");
+                        break;
+                     case 3:
+                        alert("Good");
+                        break;
+                    case 2:
+                        alert("Avergae");
+                        break;
+                    case 1:
+                        alert("Bad");
+                 }
+             }
+
+             // Function creates an alert popup window when each check box is selected
+             function fruitCheck(fruit)
+             {
+                 switch (fruit)
+                 {
+                     case 01:
+                         alert("Apple");
+                         break;
+                    case 02:
+                        alert("Orange");
+                        break;
+                    case 03:
+                        alert("Banana");
+                        break;
+                    case 04:
+                        alert("Pineapple");
+                 }
+             }
+
+             // Function creates an alert popup window when any value is selected from the drop-down list
+             function studentNumber (list)
+             {
+                 var newNumberValue;
+                 var newNumberText;
+
+                 newNumberValue= list.stuNum.options [list.stuNum.selectedIndex].value;
+                 newNumberText= list.stuNum.options [list.stuNum.selectedIndex].text;
+
+                 alert (newNumberValue);
+                 alert (newNumberText);
+             }
+
+             // Function creates an alert popup windown when text is inputted into the text box
+             function inputText()
+             {
+                 var inText = document.getElementById ("enterText");
+                 alert(inText.value);
+             }
+     </script>
+     <!-- JavaScript code ends -->
+</head>
+
+<body>
+    <form>
+        <!-- Sub-table created within the form for the row of buttons above the table -->
+        <table class="bordernone">
+            <tr>
+                <td>
+                    <!-- Selecting Button1 triggers the alert popup window for the hidden value -->
+                    <button type="button" onclick= "hiddenPopup()" class="center"> Button1 </button>
+                </td>
+                <td>
+                    <button type="button" class="center"> Button2</button>
+                </td>
+                <td>
+                    <button type="button" class="center"> Button3</button>
+                </td>
+        </table>
+        <!-- Main table created also within the form -->
+        <table>
+            <tr>
+                <td>
+                    <!-- Radio buttons -->
+                    <label> <input type="radio" value="4" name="surveyButton" onclick= "surveyChoice(4)"/> Awesome</label><br />
+                    <label> <input type="radio" value="3" name="surveyButton" onclick= "surveyChoice(3)"/> Good</label><br />
+                    <label> <input type="radio" value="2" name="surveyButton" onclick= "surveyChoice(2)"/> Average</label><br />
+                    <label> <input type="radio" value="1" name="surveyButton" onclick= "surveyChoice(1)"/> Bad</label>
+                </td>
+                <td>
+                    <!-- Drop-down select liist -->
+                    <select class="center" id="stuNum" name="stuNum"  onChange="studentNumber(this.form);">
+                        <option value="5"> Five </option>
+                        <option value="9"> Nine </option>
+                        <option value="6"> Six </option>
+                        <option value="5"> Five </option>
+                    </select>
+                </td>
+                <!-- Image of mountain -->
+                <td rowspan="2" colspan="2">
+                    <img src="https://www.worldatlas.com/r/w728-h425-c728x425/upload/f8/0c/3b/rocky-mountains-alberta-canada.jpg" 
+                    height="200" width="200" alt="Mountain" class="center" /> <p align="center"> The Rocky Mountains </p>
+                </td>
+            </tr>
+            <tr>
+                <!-- Input text field -->
+                <td>
+                    <input type="text" id="enterText" name="enterText" class="center" onChange="inputText()" />
+                </td>
+                <td>
+                    <label> <input type="checkbox" value="01" onclick= "fruitCheck(01)"/> Apple</label><br />
+                    <label> <input type="checkbox" value="02" onclick= "fruitCheck(02)"/> Orange</label><br />
+                    <label> <input type="checkbox" value="03" onclick= "fruitCheck(03)"/> Banana</label><br />
+                    <label> <input type="checkbox" value="04" onclick= "fruitCheck(04)"/> Pineapple</label>
+                </td>
+            </tr>
+            <tr>
+                <!-- Image of village -->
+                <td colspan="2">
+                    <img src="http://www.cinqueterreoutdoor.it/wp-content/uploads/2017/02/Manarola_1_cinqueterre.jpg" height="100"
+                    width="200" alt="Village" class="center" />
+                </td>
+                <!-- A short poem -->
+                <td rowspan="2">
+                    <p><em>Nature’s first green is gold,<br />
+                            Her hardest hue to hold.<br />
+                            Her early leaf’s a flower;<br />
+                            But only so an hour.<br />
+                            Then leaf subsides to leaf.<br />
+                            So Eden sank to grief,<br />
+                            So dawn goes down to day.<br />
+                            Nothing gold can stay.<br /></em> <b>Author:</b>Robert Frost</p>
+                </td>
+                <!-- Description of the book mentioned -->
+                <td rowspan="2">
+                    <p id="description"> In this book, the Baudelaire children become orphans after a mysterious fire 
+                    destroys their mansion, and supposedly kills both of their parents. They are sent to live with a dismal  
+                    abusive guardian named Count Olaf in his filthy house, where they are treated like slaves, physically and 
+                    emotionally abused, and under threats of death. They also discover he is scheming to steal their inherited 
+                    fortune and will not hesitate to kill all three of them once he obtains it.</p>
+                </td>
+            </tr>
+            <tr>
+                <!-- Image of a city -->
+                <td colspan="2">
+                    <img src="https://www.moneysense.ca/wp-content/uploads/2016/03/Toronto-Naeem-Jaffer-Getty-Images-1024x711.jpg" 
+                    height="100" width="200" alt="City" class="center" />
+                </td>
+            </tr>
+            <tr>
+                <!-- My name -->
+                <td colspan="2">
+                    <h3><p> Rinaldi, Michael </p></h3>
+                </td>
+                <!-- The title of a book with the author and publishing year-->
+                <td colspan="2">
+                    <h3 class="center"><p id="title"> A Series of Unfortunate Events: The Bad Beginning, Lemony Snicket, 1999</p></h3>
+                </td>
+            </tr>
+        </table>
+        <!-- Hidden field -->
+        <input type= "hidden" id="hf" name= "hiddenfield" value= "Hidden Field" />
+    </form>
+</body>
