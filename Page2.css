@@ -1,0 +1,49 @@
+table {
+    width: 600px;
+}
+
+table,td {
+    border: 1px dashed black;
+    background-color: #B7FFAF;
+    border-collapse: collapse;
+    padding: 15px;
+}
+
+td {
+    width: 150px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+h3 {
+    font-size: 22px;
+}
+
+button {
+    background-color: #59AFDA;
+    cursor: pointer;
+    padding: 10px 24px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: none;
+}
+
+.bordernone {
+    border: 0;
+    background: none;
+}
+
+.bordernone td {
+    border: 0;
+    background: none;
+}
+
+#description {
+    font-size: 60%;
+}
+
+#title {
+    font-style: italic;
+    font-size: 20px;
+    color: #034DEA;
+}
